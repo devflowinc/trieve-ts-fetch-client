@@ -1,0 +1,13 @@
+generatorName: typescript-fetch
+outputDir: ./generated-code/typescript-fetch-client
+packageName: trieve_ts_client
+packageVersion: 0.6.9
+
+additionalProperties:
+  projectName: trieve_ts_client
+  packageUrl: "https://trieve.ai"
+  packageLicense: "MIT"
+  packageDescription: "TypeScript Fetch client for Trieve API generated from its OpenAPI specification using openapi-generator."
+  packageAuthor: "Trieve"
+  packageAuthorEmail: "developers@trieve.ai"
+  packageVersion: "0.6.9"
