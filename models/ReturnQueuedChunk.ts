@@ -42,7 +42,7 @@ export function ReturnQueuedChunkFromJSONTyped(json: any, ignoreDiscriminator: b
     if (json == null) {
         return json;
     }
-    return BatchQueuedChunkResponseFromJSONTyped(json, true) || SingleQueuedChunkResponseFromJSONTyped(json, true);
+    return { ...BatchQueuedChunkResponseFromJSONTyped(json, true), ...SingleQueuedChunkResponseFromJSONTyped(json, true) };
 }
 
 export function ReturnQueuedChunkToJSON(value?: ReturnQueuedChunk | null): any {

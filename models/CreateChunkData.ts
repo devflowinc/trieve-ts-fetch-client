@@ -12,14 +12,17 @@
  * Do not edit the class manually.
  */
 
+import type { ChunkData } from './ChunkData';
+
 import type { Array<ChunkData> } from './Array&lt;ChunkData&gt;';
+
 import {
     instanceOfArray<ChunkData>,
     Array<ChunkData>FromJSON,
     Array<ChunkData>FromJSONTyped,
     Array<ChunkData>ToJSON,
-} from './Array&lt;ChunkData&gt;';
-import type { ChunkData } from './ChunkData';
+} from '../dist/models/ChunkData.d.ts';
+
 import {
     instanceOfChunkData,
     ChunkDataFromJSON,
@@ -42,7 +45,7 @@ export function CreateChunkDataFromJSONTyped(json: any, ignoreDiscriminator: boo
     if (json == null) {
         return json;
     }
-    return Array<ChunkData>FromJSONTyped(json, true) || ChunkDataFromJSONTyped(json, true);
+    return { ...Array<ChunkData>FromJSONTyped(json, true), ...ChunkDataFromJSONTyped(json, true) };
 }
 
 export function CreateChunkDataToJSON(value?: CreateChunkData | null): any {

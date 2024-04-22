@@ -1,13 +1,13 @@
 generatorName: typescript-fetch
-outputDir: ./generated-code/typescript-fetch-client
-packageName: trieve_ts_client
-packageVersion: 0.6.9
-
+inputSpec: openapi.json
+outputDir: ./
+configOptions:
+  projectName: trieve-ts-fetch-client
+  supportsES6: true
+  withInterfaces: true
+  npmName: trieve-ts-fetch-client
+  npmVersion: 0.6.9
+  snapshot: false
 additionalProperties:
-  projectName: trieve_ts_client
-  packageUrl: "https://trieve.ai"
-  packageLicense: "MIT"
-  packageDescription: "TypeScript Fetch client for Trieve API generated from its OpenAPI specification using openapi-generator."
-  packageAuthor: "Trieve"
-  packageAuthorEmail: "developers@trieve.ai"
-  packageVersion: "0.6.9"
+  useSingleRequestParameter: true
+  enumPropertyNaming: camelCase

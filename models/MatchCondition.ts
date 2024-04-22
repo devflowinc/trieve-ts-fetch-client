@@ -27,7 +27,7 @@ export function MatchConditionFromJSONTyped(json: any, ignoreDiscriminator: bool
     if (json == null) {
         return json;
     }
-    return numberFromJSONTyped(json, true) || stringFromJSONTyped(json, true);
+    return { ...numberFromJSONTyped(json, true), ...stringFromJSONTyped(json, true) };
 }
 
 export function MatchConditionToJSON(value?: MatchCondition | null): any {

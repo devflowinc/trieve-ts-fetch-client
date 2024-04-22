@@ -1,29 +1,32 @@
 {
-    "name": "@devflowinc/trieve-ts-fetch-client",
-    "version": "0.6.9",
-    "description": "OpenAPI client for @devflowinc/trieve-ts-fetch-client",
-    "author": "OpenAPI-Generator Contributors",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/devflowinc/trieve-ts-fetch-client"
-    },
-    "keywords": [
-      "fetch",
-      "typescript",
-      "openapi-client",
-      "openapi-generator",
-      "@devflowinc/trieve-ts-fetch-client"
-    ],
-    "license": "MIT",
-    "main": "./dist/index.js",
-    "typings": "./dist/index.d.ts",
-    "scripts": {
-      "build": "tsc",
-      "prepare": "npm run build"
-    },
-    "devDependencies": {
-      "@types/node": "^12.11.5",
-      "typescript": "^4.0",
-      "whatwg-fetch": "^3.6.2"
-    }
+  "name": "@devflowinc/trieve-js-ts-client",
+  "version": "0.7.2",
+  "description": "OpenAPI client for @devflowinc/trieve-js-ts-client",
+  "author": "OpenAPI-Generator Contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+  },
+  "keywords": [
+    "axios",
+    "typescript",
+    "openapi-client",
+    "openapi-generator",
+    "@devflowinc/trieve-js-ts-client"
+  ],
+  "license": "Unlicense",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.11.5",
+    "typescript": "^4.0",
+    "@openapitools/openapi-generator-cli": "2.13.4"
   }
+} 
